@@ -1,0 +1,538 @@
+a{
+    color: #7F7D7E;
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+/*过渡*/
+.solution-list li,.solution-list li:hover a,.signbtn a,.solution-desc,.know-details,.jmnum a,.consultationbtn,.consult-radius4{
+    -webkit-transition: all 0.5s ease-in;
+       -moz-transition: all 0.5s ease-in;
+            transition: all 0.5s ease-in;
+}
+/********************************************↓标题详情********************************************/
+.text-desc{
+    font-size: 15px;
+    text-align: center;
+    color: #949AA9;
+    white-space:nowrap;
+    font-weight: normal;
+    font-family: 微软雅黑;
+    line-height: 22px;
+}
+.text-title{
+    text-align:left;
+    color:#3F424C;
+    margin: 20px 0px;
+    font-family:黑体;
+    white-space:nowrap;
+    font-weight:normal;
+    font-size:24px;
+}
+.theme-title{
+    font-size:34px;
+    text-align:center;
+    font-family:黑体;
+    font-weight:normal;
+    color:#454850;
+    letter-spacing:2px;
+    margin-bottom:80px;
+}
+.theme-title-desc{
+    font-size:16px;
+    text-align:center;
+    color:#848B9C;
+    font-family:微软雅黑;
+    letter-spacing:1px;
+}
+/********************************************↑标题详情********************************************/
+/**************************************↓悬浮窗***********************************/
+.suspension-window{
+    position: absolute;
+    right: 0px;
+    z-index: 999999;
+    background:rgba(170,173,250,0.2);
+    height:204px;
+    top:44px;
+}
+.suspension{
+    text-align: center;
+    width: 34px;
+    height:55px;
+}
+.suspension1{
+    width: 34px;
+    height:34px;
+}
+.suspension2{
+    width:34px;
+    height:32px;
+}
+.suspension3{
+    width:34px;
+    height:38px;
+    display: none;
+}
+.suspension4{
+    width:168px;
+    height:185px;
+    display: none;
+}
+/**************************************↑悬浮窗***********************************/
+
+/*sign*/
+.signbtn{
+    display: inline-block;
+    *display: inline;
+    margin-top:20.5px;
+    float: right;
+    width: 94px;
+    margin-right:10px;
+}
+.fonts-16{
+    font-family: "微软雅黑";
+    font-size: 16px;
+}
+.signbtn a{
+    display: inline-block;
+    width: 92px;
+    height: 34px;
+    border:1px solid #fff;
+    border-radius: 4px;
+    line-height: 33px;
+    color:#fff;
+    /*! text-indent: 12px; */
+}
+
+.signbtn span{
+    font-size: 24px;
+    margin-right: 9px;
+    vertical-align: middle;
+}
+
+.signbtn a:hover{
+    background: #fff;
+    color: #333;
+}
+
+
+
+/*footer*/
+.footer{
+    min-width:1210px;
+    background-color: #231F1E;
+    color: #32312F;
+    font-family: 黑体;
+}
+.foot-list{
+    width: 1210px;
+    margin: auto;
+    clear:both;
+    overflow: hidden;
+}
+.foot-list li{
+    height: 315px;
+    float: left;
+    padding-top: 74px;
+    border-right: 1px solid #2c2928;
+    border-bottom: 1px solid #2c2928;
+    color:#6b6b6a;
+}
+.foot-list h4{
+    font-size: 18px;
+    font-family: "微软雅黑";
+    color:#fff;
+    margin-bottom: 42px;
+}
+.foot-list p{
+    margin-bottom: 18px;
+}
+.foot-center1{
+    width: 320px;
+}
+.qq{
+    display: block;
+    width: 120px;
+    height: 38px;
+    border-radius: 4px;
+    background: #08a6f5;
+    color:#fff;
+    text-align: center;
+    line-height: 38px;
+}
+.qq span{
+    font-size: 30px;
+    vertical-align:top;
+}
+
+.phone-number{
+    font-size: 40px;
+}
+.foot-center2{
+    width: 156px;
+    padding-left: 90px;
+}
+.foot-center3{
+    width: 356px;
+    padding-left: 60px;
+}
+.foot-center3 span{
+    font-size: 24px;
+    margin-right: 18px;
+}
+.foot-list .foot-center4{
+    width: 217px;
+    border-right: 0;
+    text-align: right;
+}
+.foot-center4 span{
+    float: right;
+    display: block;
+    width: 143px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.foot-down{
+    width: 1210px;
+    line-height: 92px;
+    margin:auto;
+    color:#808080;
+}
+.foot-down span{
+    float: right;
+    padding-right: 20px;
+}
+
+
+
+.consultationbtn{
+    display: block;
+    line-height: 44px;
+    text-align: center;
+    margin:auto;
+    width: 140px;
+    height: 44px;
+    border:1px solid #fff;
+    border-radius: 4px;
+    color:#fff;
+    font-size: 16px;
+}
+.consultationbtn:hover{
+    background: #fff;
+    color:#0080DC;
+}
+
+
+/*动画*/
+
+/*旋转进入rotateInDownLeft*/
+.downLeft{
+        animation:rotateInDownLeft 1s .2s ease both;
+-webkit-animation:rotateInDownLeft 1s .2s ease both;
+   -moz-animation:rotateInDownLeft 1s .2s ease both;
+}
+@-webkit-keyframes rotateInDownLeft{
+    0%{
+        -webkit-transform-origin:left bottom;
+        -webkit-transform:rotate(-90deg);
+        opacity:0
+    }
+    100%{
+        -webkit-transform-origin:left bottom;
+        -webkit-transform:rotate(0);
+        opacity:1
+    }
+}
+@-moz-keyframes rotateInDownLeft{
+    0%{
+        -moz-transform-origin:left bottom;
+        -moz-transform:rotate(-90deg);
+        opacity:0
+    }
+    100%{
+        -moz-transform-origin:left bottom;
+        -moz-transform:rotate(0);
+        opacity:1
+    }
+}
+
+
+/*旋转进入rotateInDownRight*/
+.downright{
+    -webkit-animation:rotateInDownRight 1s .2s ease both;
+    -moz-animation:rotateInDownRight 1s .2s ease both;
+}
+
+@-webkit-keyframes rotateInDownRight {
+    0% {
+        -webkit-transform-origin: right bottom;
+        -webkit-transform: rotate(90deg);
+        opacity: 0
+    }
+
+    100% {
+        -webkit-transform-origin: right bottom;
+        -webkit-transform: rotate(0);
+        opacity: 1
+    }
+}
+
+@-moz-keyframes rotateInDownRight {
+    0% {
+        -moz-transform-origin: right bottom;
+        -moz-transform: rotate(90deg);
+        opacity: 0
+    }
+
+    100% {
+        -moz-transform-origin: right bottom;
+        -moz-transform: rotate(0);
+        opacity: 1
+    }
+}
+
+
+/*淡入fadeInUpBig*/
+.fadeinupbig{
+    -webkit-animation:fadeInUpBig 1s .3s ease both;
+    -moz-animation:fadeInUpBig 1s .3s ease both;
+}
+@-webkit-keyframes fadeInUpBig{
+    0%{
+        opacity:0;
+        -webkit-transform:translateY(2000px)
+    }
+    100%{
+        opacity:1;
+        -webkit-transform:translateY(0)
+    }
+}
+@-moz-keyframes fadeInUpBig{
+    0%{
+        opacity:0;
+        -moz-transform:translateY(2000px)
+    }
+    100%{
+        opacity:1;
+        -moz-transform:translateY(0)
+    }
+}
+
+
+/*左侧淡入*/
+.fadeinleftbig{
+    -webkit-animation: fadeInLeftBig 1s .2s ease both;
+    -moz-animation: fadeInLeftBig 1s .2s ease both;
+}
+
+@-webkit-keyframes fadeInLeftBig {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(-2000px)
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0)
+    }
+}
+
+@-moz-keyframes fadeInLeftBig {
+    0% {
+        opacity: 0;
+        -moz-transform: translateX(-2000px)
+    }
+
+    100% {
+        opacity: 1;
+        -moz-transform: translateX(0)
+    }
+}
+
+/*右侧淡入*/
+.fadeinright {
+    -webkit-animation: fadeInRight 1s .4s ease both;
+    -moz-animation: fadeInRight 1s .4s ease both;
+}
+
+@-webkit-keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(20px)
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0)
+    }
+}
+
+@-moz-keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        -moz-transform: translateX(20px)
+    }
+
+    100% {
+        opacity: 1;
+        -moz-transform: translateX(0)
+    }
+}
+
+/*上方淡入*/
+.fadeIndown {
+    -webkit-animation: fadeInDown 1s .2s ease both;
+    -moz-animation: fadeInDown 1s .2s ease both;
+}
+
+@-webkit-keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-20px)
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0)
+    }
+}
+
+@-moz-keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        -moz-transform: translateY(-20px)
+    }
+
+    100% {
+        opacity: 1;
+        -moz-transform: translateY(0)
+    }
+}
+
+/*弹跳进入*/
+.bouncein {
+    -webkit-animation: bounceIn 1s .2s ease both;
+    -moz-animation: bounceIn 1s .2s ease both;
+}
+
+@-webkit-keyframes bounceIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(.3)
+    }
+
+    50% {
+        opacity: 1;
+        -webkit-transform: scale(1.05)
+    }
+
+    70% {
+        -webkit-transform: scale(.9)
+    }
+
+    100% {
+        -webkit-transform: scale(1)
+    }
+}
+
+@-moz-keyframes bounceIn {
+    0% {
+        opacity: 0;
+        -moz-transform: scale(.3)
+    }
+
+    50% {
+        opacity: 1;
+        -moz-transform: scale(1.05)
+    }
+
+    70% {
+        -moz-transform: scale(.9)
+    }
+
+    100% {
+        -moz-transform: scale(1)
+    }
+}
+
+/*脉冲*/
+.pulse {
+    -webkit-animation: pulse 1s .3s ease both;
+    -moz-animation: pulse 1s .3s ease both;
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-transform: scale(1)
+    }
+
+    50% {
+        -webkit-transform: scale(1.1)
+    }
+
+    100% {
+        -webkit-transform: scale(1)
+    }
+}
+
+@-moz-keyframes pulse {
+    0% {
+        -moz-transform: scale(1)
+    }
+
+    50% {
+        -moz-transform: scale(1.1)
+    }
+
+    100% {
+        -moz-transform: scale(1)
+    }
+}
+
+/*y轴淡入*/
+.flipin {
+    -webkit-animation: flipInY 1s .2s ease both;
+    -moz-animation: flipInY 1s .2s ease both;
+}
+
+@-webkit-keyframes flipInY {
+    0% {
+        -webkit-transform: perspective(400px) rotateY(90deg);
+        opacity: 0
+    }
+
+    40% {
+        -webkit-transform: perspective(400px) rotateY(-10deg)
+    }
+
+    70% {
+        -webkit-transform: perspective(400px) rotateY(10deg)
+    }
+
+    100% {
+        -webkit-transform: perspective(400px) rotateY(0deg);
+        opacity: 1
+    }
+}
+
+@-moz-keyframes flipInY {
+    0% {
+        -moz-transform: perspective(400px) rotateY(90deg);
+        opacity: 0
+    }
+
+    40% {
+        -moz-transform: perspective(400px) rotateY(-10deg)
+    }
+
+    70% {
+        -moz-transform: perspective(400px) rotateY(10deg)
+    }
+
+    100% {
+        -moz-transform: perspective(400px) rotateY(0deg);
+        opacity: 1
+    }
+}

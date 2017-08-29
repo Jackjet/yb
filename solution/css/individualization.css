@@ -1,0 +1,290 @@
+@CHARSET "UTF-8";
+*{margin: 0;padding: 0;}
+body{
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+    font-family: 微软雅黑;
+}
+/***************************************顶部广告、标题、导航********************************************************/
+.top{
+    position: relative;
+    height:600px;
+    min-width:1210px;
+    background:url(../img/individualizationbanner.jpg) no-repeat center top;
+    background-size: cover;
+}
+.top-title{
+    position: absolute;
+    min-width:1210px;
+   	border-bottom: 1px solid #8863FF;
+    text-align:center;
+    top: 0px;
+    left:0px;
+    right:0px;
+    color: white;
+    z-index: 9999;
+    cursor: pointer;
+    height:77px;
+}
+.logo{
+    background: url("../img/logo.png") center no-repeat;
+    float: left;
+    margin-right: 15px;
+    width:45px;
+    height:41px;
+    background-size:45px 41px;
+    margin-top:18px;
+    margin-left:10px;
+    cursor: pointer;
+}
+.logo-title{
+    color: white;
+    display: inline-block;
+    font-family: 黑体;
+    font-weight:normal;
+    letter-spacing: 2px;
+    top:0px;
+    width:80px;
+    float: left;
+    height:77px;
+    line-height:77px;
+    font-size:22px;
+}
+.logo-title{
+    +display: inline;
+}
+.daohang{
+    font-family: 微软雅黑;
+    font-weight: normal;
+    letter-spacing: 2px;
+    float: left;
+    background: url("../../img/tmbg.png") center repeat;
+    overflow: hidden;
+    font-size:20px;
+    line-height:77px;
+}
+#daohang1,#daohang2,#daohang3,#daohang4{
+	margin-left:45px;
+}
+#daohang{
+	margin-left:156px;
+}
+#daohang1,#daohang2{
+	width: 110px;
+}
+.menu{
+    width: 110px;
+    display: none;
+    text-align: center;
+    font-weight: 100;
+    font-size:16px;
+    line-height:58px;
+}
+.menu div{
+    width: 100%;
+    background: url("../img/tmbg.png") center repeat;
+    background:rgba(0,0,0,0.9);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#E5000000,endColorstr=#E5000000);
+}
+#daohang1:hover>div,#daohang2:hover>div{
+    display: block;
+}
+#daohang:hover,#daohang3:hover,#daohang4:hover{
+    border-bottom: 1px solid white;
+}
+.menu div:hover{
+    background:rgba(229,227,227,0.5);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7Fe5e3e3,endColorstr=#7Fe5e3e3);
+    color: black;
+}
+.signbtn{
+    display: inline-block;
+	margin-top:20.5px;
+	float: right;
+	width: 94px;
+	margin-right:10px;
+}
+.signbtn{
+    +display: inline;
+}
+.advertising{
+	padding-top:195.5px;
+    color: white;
+    text-align: center;
+}
+.advertising2{
+	font-weight:bold;
+	font-size:34px;
+	font-family: 黑体;
+	letter-spacing: 1px;
+}
+.advertising3{
+	font-size:18px;
+    color: #FFFFFF;
+    line-height:18px;
+    font-family: 黑体;
+    font-weight:lighter;
+	letter-spacing: 1px;
+}
+#advertising_div2{
+	width: 1210px;
+	height: 46px;
+	margin: 20px auto;
+}
+#advertising_div3{
+	width: 1210px;
+	height: 22px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:55px;	
+}
+#advertising_div4{
+	width: 1210px;
+	height: 46px;
+	margin: auto;
+}
+.consultationbtn{
+	cursor:pointer;
+}
+.navigation{
+	position: absolute;
+	height:60px;
+	bottom:0px;
+	left:0px;
+	right:0px;
+    min-width:1210px;
+    background:rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+.navigation-detail{
+	height:60px;
+	line-height:60px;
+    color: white;
+    text-align: center;
+    float: left;
+    margin-left:20px;
+    white-space:nowrap;
+    overflow: hidden;
+    font-size:18px;
+    font-weight:lighter;
+    font-family: 微软雅黑;
+    
+}
+#navigation1,#navigation3,#navigation2,#navigation4{
+	width:145px;
+}
+#navigation1{
+	margin-left: 275px;
+}
+a{
+    text-decoration: none;
+    color: #23B3FC;
+}
+.navigation a div:HOVER{
+    background-color: white;
+    color: #23B3FC;
+}
+/****************************************平台困境***************************************/
+.dilemma,.solution,.advantage,.successful-case{
+
+	min-width:1210px;
+    margin: 50px auto 50px auto;
+    background-color: white;
+    border: 0px solid red;
+}
+.dilemma-title{
+	width: 1210px;
+	text-align: center;
+	margin: auto;
+}
+.dilemma table{
+	width: 1210px;
+	margin:105px auto;
+}
+.dilemma table tr{
+	text-align: center;
+}
+.dilemma table td{
+	width: 403px;
+}
+/******************************************解决方案***************************************/
+.solution div{
+	width: 1210px;
+	margin: auto;
+	text-align: center;
+}
+.advantage div{
+	width: 1210px;
+	margin: auto;
+	text-align: center;
+}
+.advantage table{
+	width: 1210px;
+	margin:80px auto;
+	text-align: center;
+}
+.advantage table tr{
+	text-align: center;
+}
+.advantage table tr td{
+	width:403px;
+}
+/******************************************成功案例************************************************/
+.successful-case-detail{
+	margin:auto;
+	width:1210px;
+	text-align: center;
+}
+.successful-case-img{
+	margin:auto;
+	width:865px;
+	padding-left:345px;
+	padding-top:50px;
+}
+.num{
+    color: #0AA1F3;
+    font-size: 34px;
+}
+.successful-case-title{
+	
+	margin:auto;
+	width:1210px;
+}
+.success-title{
+	color: #40424E;
+	font-family:黑体;
+	font-weight:normal;
+	font-size: 20px;
+}
+
+/*font-face*/
+@font-face {font-family: "iconfont";
+  src: url('../fonts/iconfont.eot?t=1490424167365'); /* IE9*/
+  src: url('../fonts/iconfont.eot?t=1490424167365#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/iconfont.woff?t=1490424167365') format('woff'), /* chrome, firefox */
+  url('../fonts/iconfont.ttf?t=1490424167365') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('../fonts/iconfont.svg?t=1490424167365#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-QQ:before { content: "\e604"; }
+
+.icon-more:before { content: "\e640"; }
+
+.icon-user:before { content: "\e639"; }
+
+.icon-icon363601:before { content: "\e658"; }
+
+.icon-3:before { content: "\e617"; }
+
+.icon-email:before { content: "\e663"; }
+
+.icon-address:before { content: "\e607"; }

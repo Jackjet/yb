@@ -1,0 +1,276 @@
+@CHARSET "UTF-8";
+*{margin: 0;padding: 0;}
+body{
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+    font-family: 方正兰亭简体;
+}
+/***************************************顶部广告、标题、导航********************************************************/
+.top{
+    position: relative;
+    height:600px;
+    min-width:1210px;
+    background:url(../img/welfare_top_bg.jpg) no-repeat center top;
+    background-size: cover;
+}
+.top-title{
+    position: absolute;
+    min-width:1210px;
+   	border-bottom: 1px solid #FB8B4A;
+    text-align:center;
+    top: 0px;
+    left:0px;
+    right:0px;
+    color: white;
+    z-index: 9999;
+    cursor: pointer;
+    height:77px;
+}
+.logo{
+    background: url("../img/logo.png") center no-repeat;
+    float: left;
+    margin-right: 15px;
+    width:45px;
+    height:41px;
+    background-size:45px 41px;
+    margin-top:18px;
+    margin-left:10px;
+    cursor: pointer;
+}
+.logo-title{
+    color: white;
+    display: inline-block;
+    font-family: 黑体;
+    font-weight:normal;
+    letter-spacing: 2px;
+    top:0px;
+    width:90px;
+    float: left;
+    height:77px;
+    line-height:77px;
+    font-size:22px;
+}
+.logo-title{
+    +display: inline;
+}
+.daohang{
+    font-family: 微软雅黑;
+    font-weight: normal;
+    letter-spacing: 2px;
+    float: left;
+    background: url("../../img/tmbg.png") center repeat;
+    overflow: hidden;
+    font-size:20px;
+    line-height:77px;
+}
+#daohang1,#daohang2,#daohang3,#daohang4{
+	margin-left:45px;
+}
+#daohang{
+	margin-left:146px;
+}
+#daohang1,#daohang2{
+	width: 110px;
+}
+.menu{
+    width: 110px;
+    display: none;
+    text-align: center;
+    font-weight: 100;
+    font-size:16px;
+    line-height:58px;
+}
+.menu div{
+    width: 100%;
+    background: url("img/tmbg.png") center repeat;
+    background:rgba(0,0,0,0.9);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#E5000000,endColorstr=#E5000000);
+}
+#daohang1:hover>div,#daohang2:hover>div{
+    display: block;
+}
+#daohang:hover,#daohang3:hover,#daohang4:hover{
+    border-bottom: 1px solid white;
+}
+.menu div:hover{
+    background:rgba(229,227,227,0.5);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7Fe5e3e3,endColorstr=#7Fe5e3e3);
+    color: black;
+}
+.signbtn{
+    display: inline-block;
+	margin-top:20.5px;
+	float: right;
+	width: 94px;
+	margin-right:10px;
+}
+.signbtn{
+    +display: inline;
+}
+.advertising{
+	padding-top:115px;
+    color: white;
+    text-align: center;
+}
+.advertising2{
+	font-weight:bold;
+	font-size:34px;
+	font-family: 黑体;
+	letter-spacing: 1px;
+}
+.advertising3{
+	font-size:18px;
+    color: #FFFFFF;
+    line-height:18px;
+    font-family: 黑体;
+    font-weight:lighter;
+	letter-spacing: 1px;
+}
+#advertising_img{
+	height: 99px;
+	width: 1210px;
+	margin: auto;
+}
+#advertising_div2{
+	width: 1210px;
+	height: 46px;
+	margin: 20px auto;
+}
+#advertising_div3{
+	width: 1210px;
+	height: 22px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:55px;	
+}
+#advertising_div4{
+	width: 1210px;
+	height: 46px;
+	margin: auto;
+}
+.consultationbtn{
+	cursor:pointer;
+}
+.navigation{
+	position: absolute;
+	height:60px;
+	bottom:0px;
+	left:0px;
+	right:0px;
+    min-width:1210px;
+    background:rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+.navigation-detail{
+	height:60px;
+	line-height:60px;
+    color: #fff;
+    text-align: center;
+    float: left;
+    margin-left:20px;
+    white-space:nowrap;
+    overflow: hidden;
+    font-size:18px;
+    font-weight:lighter;
+    font-family: 微软雅黑;
+    
+}
+#navigation1,#navigation3,#navigation2{
+	width:145px;
+}
+#navigation1{
+	margin-left: 367.5px;
+}
+a{
+    text-decoration: none;
+    color: #23B3FC;
+}
+.navigation a div:HOVER{
+    background-color: white;
+    color: #23B3FC;
+}
+/*****************************center********************************/
+#center_welfareTel,#center_welfareTrait,.center_welfareScene{
+	min-width:1210px;
+    margin:70px auto;
+    background-color: white;
+}
+/********话费红包********/
+#center_welfareTel{
+	margin-bottom:0px;
+	text-align:center;
+	border:0px solid red;
+}
+#center_welfareTel_img{
+	margin-top:55px;
+}
+/********产品特色********/
+#center_welfareTrait{
+	margin-bottom:50px;
+	text-align:center;
+	border:0px solid red;
+}
+#center_welfareTrait table{
+	width:1210px;
+	margin-top:27px;
+	align:center;
+	margin-left:auto;
+	margin-right:auto;
+}
+#center_welfareTrait table tr{
+	text-align:center;
+}
+#center_welfareTrait table td{
+	padding-top:25px;
+}
+/********应用场景********/
+.center_welfareScene{
+	margin-bottom:50px;
+	text-align: center;
+	border:0px solid red;
+}
+.center_welfareScene table{
+	margin-top: 27px;
+	align:center;
+	width: 1210px;
+	border:0px solid red;
+	margin-left:auto;
+	margin-right:auto;
+}
+.welfare_Scene_btn{
+	cursor:pointer;
+}
+
+
+
+/*font-face*/
+@font-face {font-family: "iconfont";
+  src: url('../fonts/iconfont.eot?t=1490424167365'); /* IE9*/
+  src: url('../fonts/iconfont.eot?t=1490424167365#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/iconfont.woff?t=1490424167365') format('woff'), /* chrome, firefox */
+  url('../fonts/iconfont.ttf?t=1490424167365') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('../fonts/iconfont.svg?t=1490424167365#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-QQ:before { content: "\e604"; }
+
+.icon-more:before { content: "\e640"; }
+
+.icon-user:before { content: "\e639"; }
+
+.icon-icon363601:before { content: "\e658"; }
+
+.icon-3:before { content: "\e617"; }
+
+.icon-email:before { content: "\e663"; }
+
+.icon-address:before { content: "\e607"; }
